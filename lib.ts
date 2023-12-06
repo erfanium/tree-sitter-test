@@ -10,15 +10,15 @@ export const addTodo = (todo: Todo) => {
   todos[todo.id] = todo;
 };
 
-export const getTodo = (id: string) => {
+export const getTodo = function (id: string) {
   return todos[id];
 };
 
-export const getTodos = () => {
+export function getTodos() {
   return todos;
-};
+}
 
-export const updateTodo = (id: string, todo: Todo) => {
+export default (id: string, todo: Todo) => {
   todos[id] = todo;
 };
 
